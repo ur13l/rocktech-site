@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('../assets/fonts/Gotham-Light.otf')
+}
+
+html, body{
+    height: 100% !important;
+    margin:0;
+}
+
+.general-container {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+}
+.center-container * {
+    text-align: center;
+}
+
+.gotham-light {
+    font-family: 'Gotham Light'
+}
+
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+* {
+    color: white;
+}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
